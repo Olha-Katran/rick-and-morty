@@ -1,0 +1,33 @@
+.navLink-characters {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 260px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.persons-item {
+    margin: 30px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 5px 5px 5px lightgrey;
+    border-radius: 10px;
+}
+
+p {
+    color: grey;
+}
+.persons-info {
+    padding-left: 10px;
+    line-height: 10px;
+}
+
+.navLink-characters:hover {
+    opacity: 50%;
+}
+
+.navLink-characters:active {
+    opacity: 100%;
+}
