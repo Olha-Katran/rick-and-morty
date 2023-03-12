@@ -3,14 +3,14 @@
     color: black;
 }
 
-img {
-    width: 260px;
-    height: 200px;
+.avatar {
+    width: 16em;
+    height: 12em;
     border-radius: 10px 10px 0 0;
 }
 
 .persons-item {
-    margin: 30px;
+    margin: 2em;
     border: 1px solid lightgrey;
     box-shadow: 1px 5px 5px 5px lightgrey;
     border-radius: 10px;
@@ -19,6 +19,7 @@ img {
 p {
     color: grey;
 }
+
 .persons-info {
     padding-left: 10px;
     line-height: 10px;

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "./MainComponent";
-import DetailInfo from "./Components/Detail-info";
+import DetailInfo from "./Components/Detail-Info/Detail-info";
 
 export const router = createBrowserRouter([
     {
@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
         element: <Main />
     },
     {
-        path: "/detail",
+        path: "/detail/:characterId",
         element: <DetailInfo />
     }
 ])
