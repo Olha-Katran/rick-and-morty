@@ -14,7 +14,8 @@
         height: 8em;
     }
     .list-detail {
-        margin-left: 30px;
+        margin-left: 50px;
+        text-align: center;
     }
     .persons-list {
         grid-template-columns: auto;
@@ -39,7 +40,7 @@
         font-size: 15px;
     }
     .persons-list {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         margin-left: 30px;
     }}
 
