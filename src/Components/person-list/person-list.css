@@ -4,18 +4,23 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
 /* Для екранів з шириною менше 576 пікселів  phone*/
 @media (max-width: 575px) {
     body {
         font-size: 13px;
     }
+
     .logo-header {
         width: 24em;
         height: 8em;
     }
+
     .list-detail {
         text-align: center;
+        margin-left: 0;
     }
+
     .persons-list {
         grid-template-columns: auto;
     }
@@ -26,9 +31,11 @@
     body {
         font-size: 14px;
     }
+
     .list-detail {
         margin-left: 40px;
     }
+
     .persons-list {
         grid-template-columns: auto auto;
     }}
@@ -38,6 +45,7 @@
     body {
         font-size: 15px;
     }
+
     .persons-list {
         grid-template-columns: auto auto;
         margin-left: 30px;
@@ -48,13 +56,10 @@
     body {
         font-size: 16px;
     }
+
     .persons-list {
         grid-template-columns: auto auto auto;
     }}
 
-/* Для екранів з шириною 1200 пікселів і більше */
-@media (min-width: 1200px) {
-    .persons-list {
-    }}
 
 
