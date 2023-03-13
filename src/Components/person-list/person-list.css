@@ -14,7 +14,7 @@
         height: 8em;
     }
     .list-detail {
-        margin-left: 50px;
+        text-align: center;
     }
     .persons-list {
         grid-template-columns: auto;
