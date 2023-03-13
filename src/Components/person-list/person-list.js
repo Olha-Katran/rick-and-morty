@@ -9,7 +9,7 @@ const PersonList = (props) => {
         <div className="persons-list">
             {props.characters.map(character => {
                 return <PersonRow
-                    key={character.id}
+                    id={character.id}
                     name={character.name}
                     avatar={character.image}
                     species={character.species}

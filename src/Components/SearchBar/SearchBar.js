@@ -3,6 +3,7 @@ import './SearchBar.css';
 import logo from './Rick_and_Morty_logo.png'
 
 const SearchBar = (props) => {
+    console.log(props.searchValue)
     return (
         <div className="search-bar">
             <div className="header">
@@ -12,6 +13,7 @@ const SearchBar = (props) => {
                 <div className="search-bar-wrapper">
                     <i className="fa-solid fa-magnifying-glass"></i>
                     <input
+                        value={props.searchValue}
                         className="search-input"
                         type="text"
                         placeholder="Filter by name..."
