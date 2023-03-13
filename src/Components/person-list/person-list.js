@@ -18,4 +18,5 @@ const PersonList = (props) => {
         </div>
     )
 }
+
 export default PersonList;

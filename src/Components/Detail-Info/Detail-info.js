@@ -6,7 +6,6 @@ const DetailInfo = () => {
     let { characterId } = useParams();
     const [character, setCharacter] = useState(null);
 
-
     useEffect(() => {
         fetch(`https://rickandmortyapi.com/api/character/${characterId}`)
             .then(response => response.json())
@@ -17,7 +16,6 @@ const DetailInfo = () => {
     if (!character) {
         return <div>Loading...</div>;
     }
-
 
     return (
         <div>
@@ -62,7 +60,6 @@ const DetailInfo = () => {
             </div>
         </div>
     )
-
 }
 
 export default DetailInfo;

@@ -7,7 +7,11 @@ const SearchBar = (props) => {
     return (
         <div className="search-bar">
             <div className="header">
-                <img  className="logo-header" src={logo} alt="logo"/>
+                <img
+                    className="logo-header"
+                    src={logo}
+                    alt="logo"
+                />
             </div>
             <form>
                 <div className="search-bar-wrapper">

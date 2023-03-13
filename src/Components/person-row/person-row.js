@@ -13,7 +13,6 @@ const PersonRow = (props) => {
                 </div>
             </div>
         </NavLink>
-
     )
 }
 
