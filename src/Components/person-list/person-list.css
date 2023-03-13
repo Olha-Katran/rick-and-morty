@@ -10,8 +10,11 @@
         font-size: 13px;
     }
     .logo-header {
-        width: 34em;
-        height: 11em;
+        width: 24em;
+        height: 8em;
+    }
+    .list-detail {
+        margin-left: 30px;
     }
     .persons-list {
         grid-template-columns: auto;
@@ -22,6 +25,9 @@
 @media (min-width: 576px) and (max-width: 767px) {
     body {
         font-size: 14px;
+    }
+    .list-detail {
+        margin-left: 40px;
     }
     .persons-list {
         grid-template-columns: auto auto;
@@ -34,6 +40,7 @@
     }
     .persons-list {
         grid-template-columns: auto auto auto;
+        margin-left: 30px;
     }}
 
 /* Для екранів з шириною від 992 пікселів до 1199.98 пікселів */
