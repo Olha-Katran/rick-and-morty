@@ -2,3 +2,46 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+/* Для екранів з шириною менше 576 пікселів  phone*/
+@media (max-width: 575px) {
+    body {
+        font-size: 13px;
+    }
+    .persons-list {
+        grid-template-columns: auto;
+    }
+}
+
+/* Для екранів з шириною від 576 пікселів до 767.98 пікселів  tablet*/
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .persons-list {
+        grid-template-columns: auto auto;
+    }}
+
+/* Для екранів з шириною від 768 пікселів до 991.98 пікселів  laptop*/
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 15px;
+    }
+    .persons-list {
+        grid-template-columns: auto auto auto;
+    }}
+
+/* Для екранів з шириною від 992 пікселів до 1199.98 пікселів */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+    .persons-list {
+        grid-template-columns: auto auto auto;
+    }}
+
+/* Для екранів з шириною 1200 пікселів і більше */
+@media (min-width: 1200px) {
+    .persons-list {
+    }}
+
+

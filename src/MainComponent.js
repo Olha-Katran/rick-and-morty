@@ -5,6 +5,7 @@ import './mainComponent.css';
 
 const Main = () => {
     const [characters, setCharacters] = useState([]);
+    const searchKey = "searchKey";
 
     useEffect(() => {
         async function fetchCharacters() {
@@ -33,17 +34,29 @@ const Main = () => {
         }
 
         fetchCharacters();
+
+        let savedSearch = localStorage.getItem(searchKey);
+        console.log(savedSearch);
+        if(savedSearch !== null ) {
+            setSearchValue(savedSearch);
+        }
+
     }, []);
+
 
     const [searchValue, setSearchValue] = useState("");
 
     const searchInputHandler = (value) => {
-        setSearchValue(value)
+        setSearchValue(value);
+        localStorage.setItem(searchKey, value)
     }
 
     return (
         <div className="main-container">
-            <SearchBar searchInputHandler={searchInputHandler} />
+            <SearchBar
+                searchInputHandler={searchInputHandler}
+                searchValue={searchValue}
+            />
             <PersonList characters={characters.filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))} />
         </div>
     )
