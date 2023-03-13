@@ -1,11 +1,17 @@
 .persons-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 /* Для екранів з шириною менше 576 пікселів  phone*/
 @media (max-width: 575px) {
     body {
         font-size: 13px;
+    }
+    .logo-header {
+        width: 34em;
+        height: 11em;
     }
     .persons-list {
         grid-template-columns: auto;

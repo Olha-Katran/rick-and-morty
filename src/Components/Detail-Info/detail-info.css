@@ -53,7 +53,7 @@
 }
 
 .list-detail {
-    margin: 0;
+    margin-left: 3em;
     display: flex;
     width: 500px;
     flex-direction: column;
