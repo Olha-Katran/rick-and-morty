@@ -17,8 +17,7 @@
     }
 
     .list-detail {
-        text-align: center;
-        margin-left: 0;
+        margin-left: 100px;
     }
 
     .persons-list {
@@ -45,6 +44,10 @@
     body {
         font-size: 15px;
     }
+    .login-component {
+        left: 30%;
+
+    }
 
     .persons-list {
         grid-template-columns: auto auto;
@@ -55,6 +58,10 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
         font-size: 16px;
+    }
+    .login-component {
+        left: 30%;
+
     }
 
     .persons-list {
