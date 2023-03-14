@@ -41,7 +41,7 @@ const Login = () => {
         <div>
             {profile ?
                 <div>
-                    Hello, {user.name}
+                    <h3>Hello, {profile.name}</h3>
                     <button onClick={() => logOut()} className="login-button">
                         LogOut
                     </button>
