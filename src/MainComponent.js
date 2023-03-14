@@ -2,6 +2,8 @@ import React, { useState, useEffect}from 'react';
 import SearchBar from "./Components/SearchBar/SearchBar";
 import PersonList from "./Components/person-list/person-list";
 import './mainComponent.css';
+import Login from "./Components/Login/login";
+
 
 const Main = () => {
     const [characters, setCharacters] = useState([]);
@@ -53,6 +55,9 @@ const Main = () => {
 
     return (
         <div className="main-container">
+            <div className="login-component">
+                <Login/>
+            </div>
             <SearchBar
                 searchInputHandler={searchInputHandler}
                 searchValue={searchValue}
