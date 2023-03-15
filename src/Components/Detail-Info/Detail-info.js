@@ -18,7 +18,7 @@ const DetailInfo = () => {
     }
 
     return (
-        <div>
+        <div className='detail-container'>
             <NavLink to="/" >
                 <button className="back-button">
                     <i className="fa-solid fa-arrow-left"></i>
@@ -30,31 +30,31 @@ const DetailInfo = () => {
                 <img
                     className="avatar-detail"
                     src={character.image}
-                    alt="photo"
+                    alt="avatar detail information"
                 />
                 <h1 className="name-detail">{character.name}</h1>
                 <h6 className="information">Information</h6>
 
                 <ul className="list-detail">
                     <li>
-                        <p className="paragraph-key">Gender</p>
-                        <p className="paragraph-prop">{character.gender}</p>
+                        <p className="detail-info-key">Gender</p>
+                        <p className="detail-info-prop">{character.gender}</p>
                     </li>
                     <li>
-                        <p className="paragraph-key">Status</p>
-                        <p className="paragraph-prop">{character.status}</p>
+                        <p className="detail-info-key">Status</p>
+                        <p className="detail-info-prop">{character.status}</p>
                     </li>
                     <li>
-                        <p className="paragraph-key">Specie</p>
-                        <p className="paragraph-prop">{character.species}</p>
+                        <p className="detail-info-key">Specie</p>
+                        <p className="detail-info-prop">{character.species}</p>
                     </li>
                     <li>
-                        <p className="paragraph-key">Origin</p>
-                        <p className="paragraph-prop">{character.origin.name}</p>
+                        <p className="detail-info-key">Origin</p>
+                        <p className="detail-info-prop">{character.origin.name}</p>
                     </li>
                     <li>
-                        <p className="paragraph-key">Type</p>
-                        <p className="paragraph-prop">{character.type}</p>
+                        <p className="detail-info-key">Type</p>
+                        <p className="detail-info-prop">{character.type}</p>
                     </li>
                 </ul>
             </div>

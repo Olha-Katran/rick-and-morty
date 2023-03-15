@@ -16,13 +16,19 @@
         height: 8em;
     }
 
+    .login-component {
+        position: static;
+    }
+
     .list-detail {
-        margin-left: 100px;
+        position: relative;
+        right: 10%;
     }
 
     .persons-list {
         grid-template-columns: auto;
     }
+
 }
 
 /* Для екранів з шириною від 576 пікселів до 767.98 пікселів  tablet*/
@@ -59,9 +65,9 @@
     body {
         font-size: 16px;
     }
+
     .login-component {
         left: 30%;
-
     }
 
     .persons-list {

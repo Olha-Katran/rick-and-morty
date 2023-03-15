@@ -1,3 +1,6 @@
+.detail-container {
+    width: 100%;
+}
 .back-button {
     border: none;
     color: black;
@@ -52,9 +55,8 @@
 }
 
 .list-detail {
-    margin-left: 3em;
     display: flex;
-    width: 500px;
+    width: 50%;
     flex-direction: column;
     list-style: none;
 }
@@ -64,14 +66,14 @@
     margin: 10px 0;
 }
 
-.paragraph-key {
+.detail-info-key {
     margin: 0;
     font-size: 16px;
     font-weight: 700;
     color: #081F32;
 }
 
-.paragraph-prop {
+.detail-info-prop {
     margin: 10px 0;
     font-weight: 400;
     font-size: 14px;

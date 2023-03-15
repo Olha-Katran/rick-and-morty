@@ -6,7 +6,6 @@ import './Login.css';
 const Login = () => {
     const [ user, setUser ] = useState(null);
     const [ profile, setProfile ] = useState(null);
-    const profileSave = "profileSave";
 
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => setUser(codeResponse),
@@ -28,14 +27,10 @@ const Login = () => {
                     })
                     .catch((err) => console.log(err));
             }
-            localStorage.setItem(profileSave, profile)
         },
         [ user ]
     );
 
-    let savedUser = localStorage.getItem(profileSave);
-
-    // log out function to log the user out of google and set the profile array to null
     const logOut = () => {
         googleLogout();
         setProfile(null);
@@ -46,12 +41,12 @@ const Login = () => {
             {profile ?
                 <div className="log-out-block">
                     <h3>Hello, {profile.name}</h3>
-                    <button onClick={() => logOut()} className="login-button">
+                    <button onClick={() => logOut()} className="google-button">
                         LogOut
                     </button>
                 </div>
                 :
-                <button onClick={() => login()} className="login-button">
+                <button onClick={() => login()} className="google-button">
                     <p>Sign in</p>
                     <i className="fa-brands fa-google"></i>
                 </button>
