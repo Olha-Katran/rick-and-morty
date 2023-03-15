@@ -5,7 +5,5 @@
 }
 
 .login-component {
-    position: relative;
-    left: 40%;
-    top: 20px;
+    margin-top: 20px;
 }

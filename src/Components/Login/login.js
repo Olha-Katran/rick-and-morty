@@ -31,7 +31,6 @@ const Login = () => {
         [ user ]
     );
 
-    // log out function to log the user out of google and set the profile array to null
     const logOut = () => {
         googleLogout();
         setProfile(null);
@@ -40,16 +39,18 @@ const Login = () => {
     return (
         <div>
             {profile ?
-                <div>
+                <div className="log-out-block">
                     <h3>Hello, {profile.name}</h3>
-                    <button onClick={() => logOut()} className="login-button">
+                    <button onClick={() => logOut()} className="google-button">
                         LogOut
                     </button>
                 </div>
                 :
-                <button onClick={() => login()} className="login-button">
-                    Sign in with Google 🚀
-                </button>}
+                <button onClick={() => login()} className="google-button">
+                    <p>Sign in</p>
+                    <i className="fa-brands fa-google"></i>
+                </button>
+            }
 
         </div>
     );

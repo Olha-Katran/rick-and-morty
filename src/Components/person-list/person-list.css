@@ -16,14 +16,19 @@
         height: 8em;
     }
 
+    .login-component {
+        position: static;
+    }
+
     .list-detail {
-        text-align: center;
-        margin-left: 0;
+        position: relative;
+        right: 10%;
     }
 
     .persons-list {
         grid-template-columns: auto;
     }
+
 }
 
 /* Для екранів з шириною від 576 пікселів до 767.98 пікселів  tablet*/
@@ -45,6 +50,10 @@
     body {
         font-size: 15px;
     }
+    .login-component {
+        left: 30%;
+
+    }
 
     .persons-list {
         grid-template-columns: auto auto;
@@ -55,6 +64,10 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
         font-size: 16px;
+    }
+
+    .login-component {
+        left: 30%;
     }
 
     .persons-list {

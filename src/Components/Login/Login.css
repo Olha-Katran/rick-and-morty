@@ -1,4 +1,4 @@
-.login-button {
+.google-button {
     background-color: #E5E5E5;
     border: 1px solid #6E798C;
     color: #6E798C;
@@ -8,9 +8,33 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
 }
 
-.login-button:hover {
+.google-button:hover {
     background-color: #6E798C;
     color: #fff;
 }
+
+.google-button p {
+    color: inherit;
+}
+
+.fa-google {
+    color: inherit;
+    padding-left: 10px;
+}
+.log-out-block {
+    display: flex;
+}
+
+.log-out-block h3 {
+    margin-right: 30px;
+    color: #6E798C;
+}
+
+

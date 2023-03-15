@@ -55,13 +55,13 @@ const Main = () => {
 
     return (
         <div className="main-container">
-            <div className="login-component">
-                <Login/>
-            </div>
-            <SearchBar
-                searchInputHandler={searchInputHandler}
-                searchValue={searchValue}
-            />
+                <div className="login-component">
+                    <Login/>
+                </div>
+                <SearchBar
+                    searchInputHandler={searchInputHandler}
+                    searchValue={searchValue}
+                />
             <PersonList characters={characters.filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))} />
         </div>
     )
