@@ -7,8 +7,12 @@ const Login = () => {
     const [ user, setUser ] = useState(null);
     const [ profile, setProfile ] = useState(null);
 
+
     const login = useGoogleLogin({
-        onSuccess: (codeResponse) => setUser(codeResponse),
+        onSuccess: (codeResponse) => {
+            setUser(codeResponse);
+            localStorage.setItem('userName', codeResponse.profileObj.name);
+        },
         onError: (error) => console.log('Login Failed:', error)
     });
 
@@ -31,10 +35,20 @@ const Login = () => {
         [ user ]
     );
 
+
+
     const logOut = () => {
         googleLogout();
         setProfile(null);
+        localStorage.removeItem('userName');
     };
+
+    useEffect(() => {
+        const userName = localStorage.getItem('userName');
+        if(userName) {
+            setProfile({name: userName});
+        }
+    }, [])
 
     return (
         <div>
